@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "no-releasing-tropical-fish",
+	"version": "${version}",
+	"name": "No Releasing Tropical Fish",
+	"description": "This is a fabric mod to prevent from releasing tropical fishes.",
+	"authors": [
+		"gimi65536"
+	],
+	"contact": {
+		"homepage": "https://blog.gimi65536.xyz/",
+		"issues": "https://github.com/gimi65536/no-feeding-baby/issues",
+		"sources": "https://github.com/gimi65536/no-feeding-baby"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/no-releasing-tropical-fish/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "xyz.gimi65536.fabric.noreleasingtropicalfish.NoReleasingTropicalFishMod",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "xyz.gimi65536.fabric.noreleasingtropicalfish.NoReleasingTropicalFishModClient",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"fabric-language-kotlin": ">=1.8.22",
+		"fabric-key-binding-api-v1": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
