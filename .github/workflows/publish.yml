@@ -48,14 +48,13 @@ jobs:
           modrinth-id: Km4twlcT
           modrinth-token: "${{env.MODRINTH_TOKEN}}"
 
-          github-tag: "v${{env.VERSION}}"
+          github-tag: "v${{env.RELEASE_NAME}}"
           github-token: "${{env.GITHUB_TOKEN}}"
-
           files-primary: build/libs/!(*-@(all|sources)).jar
           files-secondary: build/libs/*-sources.jar
 
           name: "${{env.RELEASE_NAME}}"
-          version: "${{env.VERSION}}"
+          version: "${{env.RELEASE_NAME}}"
           version-type: release
           changelog-file: CHANGELOG.md
 
