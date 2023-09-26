@@ -1,5 +1,3 @@
-1.0.0
+## Update to 1.20.2
 
-Implementation for the only feature of this mod.
-
-You can also bypass the blocking by "Forcely releasing" hotkey.
+There is no functionality change.
